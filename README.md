@@ -87,7 +87,7 @@ Roadmap
     Dependencies
     
     ```
-    Zipkin Client, Zipkin UI, Sleuth
+    Zipkin Client, Zipkin UI
     ```
    
 3. Generate Project
