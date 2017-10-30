@@ -160,7 +160,7 @@ Roadmap
     }
     ```
 
-### Configure In Microservice ###
+### Configure In Microservice (Client) ###
 
 1. In `pom.xml` add new dependency
     
@@ -174,5 +174,18 @@ Roadmap
         <artifactId>spring-cloud-starter-sleuth</artifactId>
     </dependency>
     ```
+
+2. In `bootstrap.yml` add new properties
+
+    ```
+    spring:
+        ...
+        zipkin:
+            base-url: http://localhost:8765
+          sleuth:
+            sampler:
+              percentage: 1.0
+    ```
+
 
 ### FINISH ###
