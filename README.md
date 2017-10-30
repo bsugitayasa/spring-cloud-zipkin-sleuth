@@ -68,7 +68,7 @@ Roadmap
 
 ### Spring Boot Initializr ###
 
-1. Browse [https://start.spring.io/] (https://start.spring.io/)
+1. Create Zipkin Server --> Browse [https://start.spring.io/] (https://start.spring.io/)
 
 2. Fill Project Metadata
 
