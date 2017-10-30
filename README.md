@@ -87,7 +87,7 @@ Roadmap
     Dependencies
     
     ```
-    Zipkin Client, Zipkin UI
+    Zipkin UI, Eureka Discovery, Config Client
     ```
    
 3. Generate Project
@@ -100,6 +100,14 @@ Roadmap
 1. In `pom.xml` makesure for dependency
     
     ```
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-config</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-eureka</artifactId>
+    </dependency>
     <dependency>
         <groupId>io.zipkin.java</groupId>
         <artifactId>zipkin-server</artifactId>
@@ -152,7 +160,7 @@ Roadmap
     }
     ```
 
-### Configure In Microservice###
+### Configure In Microservice ###
 
 1. In `pom.xml` add new dependency
     
