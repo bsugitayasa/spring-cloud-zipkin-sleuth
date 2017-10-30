@@ -181,11 +181,18 @@ Roadmap
     spring:
         ...
         zipkin:
-            base-url: http://localhost:8765
-          sleuth:
+            base-url: http://localhost:8765 #or your zipkin server uri
+        sleuth:
             sampler:
               percentage: 1.0
     ```
 
+3. You will see something like this in the logging, ex: browse from catalog service
+
+    ```
+    2017-10-30 17:45:00.923  INFO [catalog,4a10e06c3fe40f0f,4a10e06c3fe40f0f,false] 2829 --- [nio-8764-exec-1] i.t.t.m.c.c.ProductApiController         : ##### Mengambil data semua produk
+    ```
+
+In the example, `catalog` is the `spring.application.name`, `4a10e06c3fe40f0f` is the trace ID and `4a10e06c3fe40f0f` is the span ID.
 
 ### FINISH ###
