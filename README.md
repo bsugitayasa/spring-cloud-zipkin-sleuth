@@ -92,7 +92,7 @@ Roadmap
    
 3. Generate Project
 
-4. Download dan import to your IDE
+4. Download & import to your IDE
 
 
 ### Build with Maven ###
