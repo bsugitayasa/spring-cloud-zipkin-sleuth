@@ -147,7 +147,7 @@ Roadmap
 
 ### Build with IDE ###
 
-3. Add `@EnableZipkinServer` into your spring project configuration
+* Add `@EnableZipkinServer` into your spring project configuration
 
     ```
     @SpringBootApplication
