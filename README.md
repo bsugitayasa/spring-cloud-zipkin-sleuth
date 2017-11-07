@@ -27,7 +27,7 @@ Roadmap
 
 * Just add some depndency on `pom.xml`in the spring boot project
 
-    ```
+    ```java
     <dependency>
         <groupId>io.zipkin.java</groupId>
         <artifactId>zipkin-server</artifactId>
@@ -56,7 +56,7 @@ Roadmap
 
 * Is very easy. Just need to add it's `pom.xml` in the spring boot project
 
-    ```
+    ```java
     <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-sleuth</artifactId>
@@ -74,19 +74,19 @@ Roadmap
 
     Group
     
-    ```
+    ```java
     com.sheringsession.balicamp.zipkin    
     ```
 
     Artifact
     
-    ```
+    ```java
     zipkin-sleuth
     ```
    
     Dependencies
     
-    ```
+    ```java
     Zipkin UI, Eureka Discovery, Config Client
     ```
    
@@ -99,7 +99,7 @@ Roadmap
 
 1. In `pom.xml` makesure for dependency
     
-    ```
+    ```java
     <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-config</artifactId>
@@ -121,7 +121,7 @@ Roadmap
 
 2. `applicatioin.properties` rename into `bootstrap.yml`
 
-    ```
+    ```java
     spring:
       application:
         name: zipkin
@@ -149,7 +149,7 @@ Roadmap
 
 * Add `@EnableZipkinServer` into your spring project configuration
 
-    ```
+    ```java
     @SpringBootApplication
     @EnableZipkinServer
     public class ZipkinApplication {
@@ -164,7 +164,7 @@ Roadmap
 
 1. In `pom.xml` add new dependency
     
-    ```
+    ```java
     <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-sleuth-zipkin</artifactId>
@@ -177,7 +177,7 @@ Roadmap
 
 2. In `bootstrap.yml` add new properties
 
-    ```
+    ```java
     spring:
         ...
         zipkin:
@@ -189,10 +189,10 @@ Roadmap
 
 3. You will see something like this in the logging, ex: browse from catalog service
 
-    ```
+    ```java
     2017-10-30 17:45:00.923  INFO [catalog,4a10e06c3fe40f0f,4a10e06c3fe40f0f,false] 2829 --- [nio-8764-exec-1] i.t.t.m.c.c.ProductApiController         : ##### Mengambil data semua produk
     ```
 
 In the example, `catalog` is the `spring.application.name`, `4a10e06c3fe40f0f` is the trace ID and `4a10e06c3fe40f0f` is the span ID.
 
-### FINISH ###
+#### Selamat Mencoba ####
